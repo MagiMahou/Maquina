@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-public class Tarefa
-{
+public class tarefa{
 
 public static void main(String[] args) {
 Scanner scanner = new Scanner(System.in);
@@ -51,17 +50,23 @@ System.out.println("Programa encerrado. Obrigado!");
 
 scanner.close();
 
-if(soma >= Refrigerante || soma < Salgado){
+if (soma < Refrigerante);{
+	System.out.println("Insira um valor valido");
+	
+}
+
+if (soma == Refrigerante || soma <= Salgado){
 troco = soma - Refrigerante;
 System.out.println("Retire o Refrigerante. Troco: R$ " + troco);
 
-}
-if(soma >= Salgado){
-troco = soma - Salgado;
-System.out.println("Retire o salgadinho. Troco: R$ " + troco);
 
 }
 
+else {
+troco = soma - (Salgado + Refrigerante);
+System.out.println("Retire o Refrigerante e o Salgado. Troco: R$ " + troco);
+
+}
 
 
-
+}}
